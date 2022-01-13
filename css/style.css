@@ -1,3 +1,30 @@
-body {
-    color: red;
+/* 
+    Author: BitWilderTech;
+    Theme: Acme Corp Website
+    Version: 1.0;
+ */
+
+ /* Import montserrat font from google fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+ /* General CSS Section */
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: #24252A;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 500;
+     font-size: 16px;
+     color: #ecf0f1;
+     text-decoration: none;
+ }
+
+/* Hamburger-Logo Section */
+.hamburger-logo > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
 }
+

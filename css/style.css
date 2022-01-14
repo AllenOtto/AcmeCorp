@@ -16,15 +16,63 @@
      font-family: "Montserrat", sans-serif;
      font-weight: 500;
      font-size: 16px;
-     color: #ecf0f1;
+     color: #edf0f1;
      text-decoration: none;
+     list-style-type: none;
+ }
+ .text-center {
+     text-align: center;
  }
 
-/* Hamburger-Logo Section */
+/* Header Section */
+.container {
+    padding: 5px 3%;
+    border: 1px solid white;
+}
 .hamburger-logo > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
 }
+.logo {
+    width: 80%;
+}
+
+/* Navbar Section */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+}
+.nav-links li {
+    padding: 5px 0;
+}
+.nav-links li a {
+    padding: 1px;
+}
+.nav-links li a:hover {
+    transition: .3s all ease-in-out;
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

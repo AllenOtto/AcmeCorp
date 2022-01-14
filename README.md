@@ -2,7 +2,7 @@
 
 **Version 1.0**
 
-Basic mobile-responsive multi-page site website for AcmeCorp Group.
+Basic mobile-responsive multi-page website for AcmeCorp Group.
 
 ---
 

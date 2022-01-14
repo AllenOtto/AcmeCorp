@@ -12,7 +12,7 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     background-color: #24252A;
+     background-color: #0A0A0A;
      font-family: "Montserrat", sans-serif;
      font-weight: 500;
      font-size: 16px;
@@ -47,13 +47,13 @@
 /* Navbar Section */
 .nav-links {
     display: flex;
-    box-shadow: 0 0 10px #edf0f1;
+    box-shadow: 0 0 5px #edf0f1;
 }
 .nav-links li {
     flex: 1;
     padding: .5rem 1rem;
     text-align: center;
-    width: 230px;
+    width: auto;
     position: relative;
 }
 .nav-links li a {
@@ -62,26 +62,29 @@
 }
 .nav-links li a:hover {
     transition: all .3s ease;
-    color: #edf0f1;
+    color: #e10a0a;
     padding: .5rem 1rem;
-    background-color: #e10a0a;
 }
 .services-dropdown {
+    border: 1px solid #e10a0a;
+    border-radius: 3px;
     display: none;
 }
 .nav-links li:hover > .services-dropdown {
     display: block;
     position: absolute;
-    left: 5px;
+    left: 50px;
     top: 35px;
 }
 .companies-dropdown {
+    border: 1px solid #e10a0a;
+    border-radius: 3px;
     display: none;
 }
 .nav-links li:hover > .companies-dropdown {
     display: block;
     position: absolute;
-    left: 10px;
+    left: 40px;
     top: 35px;
 }
 /* Header Section */
@@ -93,9 +96,16 @@
 }
 .header-image {
     width: 60%;
+    border-radius: 5px;
+    border: 5px solid #e10a0a;
 }
 .header-caption {
     width: 40%;
+    text-align: center;
+    margin-top: 6rem;
+}
+.header-caption h2 {
+    padding: 2rem 0;
 }
 
 

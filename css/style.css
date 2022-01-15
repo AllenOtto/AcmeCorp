@@ -246,7 +246,7 @@
 
 /* Socials Section */
 .socials {
-    margin: 3rem 0;
+    margin: 3rem 0 .5rem;
 }
 .socials .container {
     text-align: center;
@@ -258,9 +258,15 @@
     width: 2rem;
 }
 
-
-
-
+/* Footer Section */
+.footer .container {
+    text-align: center;
+}
+.footer .container p {
+    font-size: .8rem;
+    padding: .8rem;
+    border-top: 1px solid rgb(83, 83, 243);
+}
 
 
 

@@ -23,6 +23,10 @@
  .text-center {
      text-align: center;
  }
+ .bg-text {
+    font-size:x-large;
+    font-weight: 800;
+}
  hr {
      color: #edf0f1;
  }
@@ -73,7 +77,7 @@
 .nav-links li:hover > .services-dropdown {
     display: block;
     position: absolute;
-    left: 50px;
+    left: 55px;
     top: 35px;
 }
 .companies-dropdown {
@@ -84,23 +88,23 @@
 .nav-links li:hover > .companies-dropdown {
     display: block;
     position: absolute;
-    left: 40px;
+    left: 46px;
     top: 35px;
 }
 /* Header Section */
 .header {
-    margin: 1rem 0;
+    margin: 3rem 0;
 }
 .header > .container {
     display: flex;
 }
 .header-image {
-    width: 60%;
+    width: 50%;
     border-radius: 5px;
     border: 5px solid #e10a0a;
 }
 .header-caption {
-    width: 40%;
+    width: 50%;
     text-align: center;
     margin-top: 6rem;
 }
@@ -108,7 +112,36 @@
     padding: 2rem 0;
 }
 
-
+/* Companies Section */
+.companies {
+    margin: 3rem 0;
+}
+.companies-heading {
+    margin: 1rem 0 2rem;
+}
+.card-container-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    width: 22%;
+    height: 500px;
+    /* border: 1px solid #edf0f1; */
+    border-radius: 10px;
+    margin: 3rem 0;
+    text-align: center;
+    box-shadow: 0 0 15px #ffffff;
+}
+.card-text > * {
+    margin: 1rem 0;
+    padding: 0 .5rem;
+}
+.ad-logo {
+    width: 100%;
+    padding-bottom: 1rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
 
 
 

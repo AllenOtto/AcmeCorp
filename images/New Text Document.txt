@@ -1,0 +1,7 @@
+    <!-- Rounded Logo Section Statrs Here -->
+    <section class="rounded-logo">
+        <div class="container">
+            <img src="images/acme-logo-portrait-sm.png" alt="acme-rounded-logo">
+        </div>
+    </section>
+    <!-- Rounded Logo Section ends Here -->

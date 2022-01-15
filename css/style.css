@@ -192,6 +192,18 @@
     justify-content: space-evenly;
 }
 
+/* Rounded Logo Section */
+.rounded-logo {
+    margin: 1rem 0 3rem;
+}
+.rounded-logo .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+.rounded-logo .acme-rounded-logo {
+    width: 200px;
+}
+
 /* Links Section */
 .footer-links .container {
     display: flex;
@@ -214,6 +226,9 @@
 }
 .links ul li a {
     transition: all .3s ease;
+}
+.links ul li a {
+    padding: .5rem;
 }
 .links ul li a:hover {
     color: rgb(83, 83, 243);

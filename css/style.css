@@ -57,6 +57,7 @@
     flex: 1;
     padding: .5rem 1rem;
     position: relative;
+    transition: all .3s ease;
 }
 .nav-links > li {
     text-align: center;
@@ -73,6 +74,9 @@
     border-left: 3px solid #e10a0a;
     border-radius: 3px;
     display: none;
+}
+.services-dropdown {
+    transition: all .3s ease;
 }
 .nav-links li:hover > .services-dropdown {
     display: block;
@@ -139,7 +143,7 @@
 .card {
     width: 23%;
     min-width: 250px;
-    height: 550px;
+    height: 560px;
     color: black;
     border-radius: 7px;
     margin: 3rem 0;
@@ -166,6 +170,14 @@
     font-size: 1.3rem;
     font-weight: 500;
     color: #e10a0a;
+    transition: color .3s ease;
+}
+.card-text h2 a:hover {
+    color:rgb(83, 83, 243);
+}
+.card-text p {
+    font-size: .8rem;
+    line-height: 1.5rem;
 }
 /* .acme-card-text {
     margin: 4.3rem 0 1rem;
@@ -179,6 +191,36 @@
     display: flex;
     justify-content: space-evenly;
 }
+
+/* Links Section */
+.footer-links .container {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2rem;
+}
+.links {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 2;
+}
+.quote {
+    flex: 2;
+}
+.services-links {
+    flex: 1;
+}
+.companies-links {
+    flex: 1;
+}
+.links ul li a {
+    transition: all .3s ease;
+}
+.links ul li a:hover {
+    color: rgb(83, 83, 243);
+    padding-left: .5rem;
+    border-left: 5px solid #e10a0a;
+}
+
 
 
 

@@ -194,21 +194,29 @@
 
 /* Rounded Logo Section */
 .rounded-logo {
-    margin: 1rem 0 3rem;
+    margin: 0 0 3rem;
 }
 .rounded-logo .container {
-    display: flex;
-    justify-content: space-evenly;
+    text-align: center;
 }
 .rounded-logo .acme-rounded-logo {
     width: 200px;
+}
+.rounded-logo h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 3rem;
+}
+.rounded-logo p {
+    line-height: 3rem;
+    font-size: .9rem;
 }
 
 /* Links Section */
 .footer-links .container {
     display: flex;
     justify-content: space-between;
-    line-height: 2rem;
+    line-height: 3rem;
 }
 .links {
     display: flex;
@@ -226,18 +234,29 @@
 }
 .links ul li a {
     transition: all .3s ease;
+    border-left: 5px solid #e10a0a;
 }
 .links ul li a {
-    padding: .5rem;
+    padding: 1rem;
 }
 .links ul li a:hover {
     color: rgb(83, 83, 243);
     padding-left: .5rem;
-    border-left: 5px solid #e10a0a;
 }
 
-
-
+/* Socials Section */
+.socials {
+    margin: 3rem 0;
+}
+.socials .container {
+    text-align: center;
+}
+.socials .container a {
+    padding: 1rem;
+}
+.socials .container a img {
+    width: 2rem;
+}
 
 
 

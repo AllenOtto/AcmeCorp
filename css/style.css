@@ -56,40 +56,42 @@
 .nav-links li {
     flex: 1;
     padding: .5rem 1rem;
-    text-align: center;
-    width: auto;
     position: relative;
 }
+.nav-links > li {
+    text-align: center;
+}
 .nav-links li a {
-    width: 230px;
-    padding: .5rem 1rem;
+    padding: .5rem 0;
 }
 .nav-links li a:hover {
     transition: all .3s ease;
     color: #e10a0a;
-    padding: .5rem 1rem;
+    padding: .5rem .5rem;
 }
 .services-dropdown {
-    border: 1px solid #e10a0a;
+    border-left: 3px solid #e10a0a;
     border-radius: 3px;
     display: none;
 }
 .nav-links li:hover > .services-dropdown {
     display: block;
     position: absolute;
-    left: 55px;
+    left: 60px;
     top: 35px;
+    text-align: left;
 }
 .companies-dropdown {
-    border: 1px solid #e10a0a;
+    border-left: 3px solid #e10a0a;
     border-radius: 3px;
     display: none;
 }
 .nav-links li:hover > .companies-dropdown {
     display: block;
     position: absolute;
-    left: 46px;
+    left: 55px;
     top: 35px;
+    text-align: left;
 }
 /* Header Section */
 .header {
@@ -124,24 +126,39 @@
     justify-content: space-evenly;
 }
 .card {
-    width: 22%;
+    width: 20%;
     height: 500px;
-    /* border: 1px solid #edf0f1; */
-    border-radius: 10px;
+    color: black;
+    border-radius: 7px;
     margin: 3rem 0;
     text-align: center;
-    box-shadow: 0 0 15px #ffffff;
+    line-height: 1rem;
+    box-shadow: 0 0 5px #fff;
+    transition: all .3s ease-in-out;
 }
-.card-text > * {
-    margin: 1rem 0;
-    padding: 0 .5rem;
+.card:hover {
+    width: 20.5%;
+    box-shadow: 0 0 10px #ffffff;
+    height: 520px;
 }
 .ad-logo {
     width: 100%;
     padding-bottom: 1rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border: 1px solid red;
 }
+.card-text > * {
+    margin: 2rem 0 1rem;
+    padding: 0 2%;
+    border: 1px solid red;
+}
+.card-footer {
+    height: 30px;
+    border: 1px solid red;
+}
+
+
 
 
 

@@ -16,7 +16,7 @@
     --primary-blue: #00a6ff;
     --primary-hot-pink: #ff4fba;
     --background-black: #0A0A0A;
-    --section-margin: 2rem 0;
+    --section-margin: 1.5rem 0;
  }
 
  /* General CSS Section */
@@ -70,12 +70,12 @@ body {
     align-items: center;
 }
 .logo {
-    width: 13%;
+    width: 11%;
     order: 1;
     padding: .85rem 0;
 }
 .atl-logo {
-    width: 9%;
+    width: 7%;
     order: 1;
     padding: .3rem 0;
 }
@@ -147,13 +147,12 @@ body {
 .header {
     margin: var(--section-margin);
 }
-.header > .container {
+.header .container {
     display: flex;
 }
 .header-image {
-    width: 50%;
+    width: 48%;
     border-radius: 5px;
-    /* border: 5px solid var(--primary-red); */
 }
 .header-1 {
     color: var(--primary-blue);
@@ -162,7 +161,7 @@ body {
     color: var(--primary-hot-pink);
 }
 .header-caption {
-    width: 50%;
+    width: 48%;
     text-align: center;
     margin: 2.5rem 0 1rem;
 }
@@ -268,11 +267,12 @@ body {
 }
 .links {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    flex: 2;
+    flex: 1;
 }
 .quote {
-    flex: 2;
+    flex: 1;
 }
 .services-links {
     flex: 1;
@@ -320,7 +320,14 @@ body {
     border-top: 1px solid var(--primary-blue);
 }
 
+@media (max-width: 1000px) {
+    .header .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
 
+}
 
 
 

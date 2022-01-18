@@ -6,6 +6,8 @@
 
  /* Import montserrat font from google fonts */
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
  :root {
     /* variables */
@@ -52,7 +54,7 @@
     align-items: center;
 }
 .logo {
-    width: 13%;
+    width: 11%;
     order: 1;
 }
 .atl-logo {
@@ -65,7 +67,10 @@
 /* Navbar Section */
 .nav-links {
     display: flex;
-    box-shadow: 0 0 5px var(--primary-white);
+}
+.nav-links li, .nav-links a {
+    font-size: 14px;
+    font-weight: 300;
 }
 .nav-links li {
     flex: 1;
@@ -78,7 +83,7 @@
 }
 .nav-links li a {
     padding: .5rem 0;
-    transition: all .4s ease-in-out;
+    transition: all .4s ease;
 }
 .nav-links li a:hover {
     color: var(--primary-red);
@@ -104,6 +109,7 @@
     left: 60px;
     top: 35px;
     text-align: left;
+    transition: all .3s ease;
 }
 .companies-dropdown {
     border-left: 5px solid var(--primary-blue);
@@ -127,10 +133,10 @@
 .header-image {
     width: 50%;
     border-radius: 5px;
-    border: 5px solid var(--primary-red);
+    /* border: 5px solid var(--primary-red); */
 }
 .atl-header-image {
-    border: 5px solid var(--primary-blue);
+    /* border: 5px solid var(--primary-blue); */
 }
 .header-1 {
     color: var(--primary-blue);

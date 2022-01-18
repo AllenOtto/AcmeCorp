@@ -16,7 +16,7 @@
     --primary-blue: #00a6ff;
     --primary-hot-pink: #ff4fba;
     --background-black: #0A0A0A;
-    --section-margin: 3rem 0;
+    --section-margin: 2rem 0;
  }
 
  /* General CSS Section */
@@ -32,6 +32,21 @@
 
      text-decoration: none;
      list-style-type: none;
+ }
+body {
+    animation: loadWell 0.75s;
+}
+
+ @keyframes loadWell {
+     from {
+        opacity: 0;
+        transform: translateY(-30px);
+     }
+
+     to {
+        opacity: 1;
+        transform: translateY(0);
+     }
  }
  .text-center {
      text-align: center;
@@ -151,7 +166,7 @@
 .header-caption {
     width: 50%;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 .header-caption h2 {
     padding: 2rem 0;

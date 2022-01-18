@@ -63,6 +63,7 @@ body {
 /* Logo Section */
 .container {
     padding: 0 3%;
+    min-width: 20%;
 }
 .hamburger-logo > .container {
     display: flex;
@@ -341,13 +342,16 @@ body {
         left: 10px;
     }
     .links {
-        display: flex;
-        justify-content: space-evenly;
-        width: 100%;
         min-width: 500px;
         margin: 2rem 0;
+        text-align: center;
+    }
+    .links ul li a {
+        border-left: 0px solid black;
     }
     .quote {
+        text-align: center;
+        padding: 5%;
         width: 100%;
         min-width: 500px;
     }
@@ -371,13 +375,14 @@ body {
 @media (max-width: 800px) {
     .container {
         margin: 1.5rem 0 2rem;
+        width: 100%;
+        min-width: 500px;
     }
     .navbar {
         display: none;
     }
     .header .container {
         flex-wrap: wrap;
-        justify-content: center;
     }
 
 

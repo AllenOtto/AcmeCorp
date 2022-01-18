@@ -46,7 +46,7 @@
 
 /* Logo Section */
 .container {
-    padding: 5px 3%;
+    padding: 0 3%;
 }
 .hamburger-logo > .container {
     display: flex;
@@ -54,11 +54,14 @@
     align-items: center;
 }
 .logo {
-    width: 11%;
+    width: 13%;
     order: 1;
+    padding: .85rem 0;
 }
 .atl-logo {
     width: 9%;
+    order: 1;
+    padding: .3rem 0;
 }
 .hamburger {
     order: 2;
@@ -67,6 +70,7 @@
 /* Navbar Section */
 .nav-links {
     display: flex;
+    border: 1px solid var(--primary-white);
 }
 .nav-links li, .nav-links a {
     font-size: 14px;
@@ -281,7 +285,7 @@
 
 /* Socials Section */
 .socials {
-    margin: var(--section-margin) .5rem;
+    margin: var(--section-margin) 1rem;
 }
 .socials .container {
     text-align: center;

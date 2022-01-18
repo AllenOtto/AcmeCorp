@@ -163,7 +163,7 @@ body {
 .header-caption {
     width: 48%;
     text-align: center;
-    margin: 2.5rem 0 1rem;
+    margin: 2rem 0 1rem;
 }
 .header-caption h2 {
     padding: 2rem 0;
@@ -262,6 +262,7 @@ body {
 /* Links Section */
 .footer-links .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     line-height: 3rem;
 }
@@ -319,13 +320,66 @@ body {
     padding: .8rem;
     border-top: 1px solid var(--primary-blue);
 }
+@media (max-width: 1250px) {
+    .nav-links li:hover > .services-dropdown {
+        left: 40px;
+    }
+    .nav-links li:hover > .companies-dropdown {
+        left: 30px;
+    }
+}
 
-@media (max-width: 1000px) {
+@media (max-width: 1050px) {
+    .bg-text {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    .nav-links li:hover > .services-dropdown {
+        left: 20px;
+    }
+    .nav-links li:hover > .companies-dropdown {
+        left: 10px;
+    }
+    .links {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        min-width: 500px;
+        margin: 2rem 0;
+    }
+    .quote {
+        width: 100%;
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-links li:hover > .services-dropdown {
+        left: 0px;
+    }
+    .nav-links li:hover > .companies-dropdown {
+        left: 0px;
+    }
+}
+
+@media (max-width: 850px) {
+    .nav-links li:hover > .companies-dropdown {
+        left: -10px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin: 1.5rem 0 2rem;
+    }
+    .navbar {
+        display: none;
+    }
     .header .container {
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
 
 }
 

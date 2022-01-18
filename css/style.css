@@ -34,13 +34,13 @@
      list-style-type: none;
  }
 body {
-    animation: loadWell 0.75s;
+    animation: loadPageWell 0.75s;
 }
 
- @keyframes loadWell {
+ @keyframes loadPageWell {
      from {
         opacity: 0;
-        transform: translateY(-30px);
+        transform: translateY(-10px);
      }
 
      to {
@@ -166,7 +166,7 @@ body {
 .header-caption {
     width: 50%;
     text-align: center;
-    margin-top: 2rem;
+    margin: 2rem 0 1rem;
 }
 .header-caption h2 {
     padding: 2rem 0;

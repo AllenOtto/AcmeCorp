@@ -117,6 +117,7 @@ body {
     border-left: 5px solid var(--primary-blue);
     border-radius: 3px;
     display: none;
+    transition: all .3s ease;
 }
 .atl-services-dropdown {
     border-left: 5px solid var(--primary-blue);
@@ -130,7 +131,6 @@ body {
     left: 60px;
     top: 35px;
     text-align: left;
-    transition: all .3s ease;
 }
 .companies-dropdown {
     border-left: 5px solid var(--primary-blue);
@@ -150,9 +150,10 @@ body {
 }
 .header .container {
     display: flex;
+    flex-wrap: wrap;
 }
 .header-image {
-    width: 48%;
+    width: 50%;
     border-radius: 5px;
 }
 .header-1 {
@@ -162,7 +163,7 @@ body {
     color: var(--primary-hot-pink);
 }
 .header-caption {
-    width: 48%;
+    width: 50%;
     text-align: center;
     margin: 2rem 0 1rem;
 }
@@ -227,7 +228,7 @@ body {
     color:var(--primary-red);
 }
 .atl-card-text h2 a:hover {
-    color:var(--primary-hot-pink);
+    color: var(--primary-hot-pink);
 }
 .card-text p {
     font-size: .8rem;
@@ -330,7 +331,7 @@ body {
     }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1100px) {
     .bg-text {
         font-size: 2rem;
         font-weight: 600;
@@ -347,7 +348,7 @@ body {
         text-align: center;
     }
     .links ul li a {
-        border-left: 0px solid black;
+        border-left: 0px;
     }
     .quote {
         text-align: center;
@@ -357,32 +358,20 @@ body {
     }
 }
 
-@media (max-width: 900px) {
-    .nav-links li:hover > .services-dropdown {
-        left: 0px;
-    }
-    .nav-links li:hover > .companies-dropdown {
-        left: 0px;
-    }
-}
-
-@media (max-width: 850px) {
-    .nav-links li:hover > .companies-dropdown {
-        left: -10px;
-    }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
     .container {
         margin: 1.5rem 0 2rem;
         width: 100%;
-        min-width: 500px;
+        min-width:500px;
     }
     .navbar {
         display: none;
     }
-    .header .container {
-        flex-wrap: wrap;
+    .header-caption {
+        width: 100%;
+    }
+    .header-image {
+        width: 100%;
     }
 
 

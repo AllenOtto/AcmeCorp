@@ -271,7 +271,7 @@ body {
 .links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     flex: 1;
 }
 .quote {
@@ -362,7 +362,7 @@ body {
     .container {
         margin: 1.5rem 0 2rem;
         width: 100%;
-        min-width:500px;
+        min-width: 350px;
     }
     .navbar {
         display: none;
@@ -394,7 +394,10 @@ body {
         width: 60%;
     }
     .atl-logo {
-        width: 55;
+        width: 45%;
+    }
+    .services-links {
+        width: 100%;
     }
 }
 

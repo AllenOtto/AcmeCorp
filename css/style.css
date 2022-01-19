@@ -263,26 +263,23 @@ body {
 .footer-links .container {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     line-height: 3rem;
-    /* max-width: 500px; */
 }
 .links {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    /* flex: 1; */
+    min-width: 450px;
     width: 50%;
 }
 .quote {
-    /* flex: 1; */
+    min-width: 450px;
     width: 50%;
 }
 .services-links {
-    /* flex: 1; */
     width: 40%;
 }
 .companies-links {
-    /* flex: 1; */
     width: 60%;
 }
 .links ul li a {
@@ -353,9 +350,6 @@ body {
     .links {
         max-width: 50%;
      }
-     /* .quote {
-         max-width: 50%;
-     } */
     .links {
         width: 100%;
         max-width: 50%;
@@ -390,12 +384,16 @@ body {
     .footer-links .container {
         font-size: .6rem;
     }
-    /* .links {
-       max-width: 50%;
+    .links {
+        padding: 1rem 0;
+       margin: 0 auto;
+       text-align: center;
     }
     .quote {
-        max-width: 50%;
-    } */
+        padding: 1rem 0;
+        margin: 0 auto;
+       text-align: center;
+    }
 }
 @media (max-width: 700px) {
     .logo {

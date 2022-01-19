@@ -373,12 +373,30 @@ body {
     .header-image {
         width: 100%;
     }
-
-
+    .logo {
+        width: 40%;
+    }
+    .atl-logo {
+        width: 35%;
+    }
+}
+@media (max-width: 700px) {
+    .logo {
+        width: 50%;
+    }
+    .atl-logo {
+        width: 45%;
+    }
 }
 
-
-
+@media (max-width: 400px) {
+    .logo {
+        width: 60%;
+    }
+    .atl-logo {
+        width: 55;
+    }
+}
 
 
 

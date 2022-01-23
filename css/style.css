@@ -69,7 +69,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 .logo {
     width: 11%;
@@ -78,20 +77,33 @@ body {
 }
 .atl-logo {
     width: 7%;
-    order: 1;
     padding: .3rem 0;
 }
 
 /* Ham-Menu Section */
-.hamburger {
-    order: 2;
+.ham-menu {
+    position: relative;
+    padding: 1rem 0;
 }
 .menu {
+    position: absolute;
+    width: 150px;
+    top: 3rem;
+    right: 0;
+    text-align: right;
     display: none;
 }
-.bar {
-    width: 100%;
-    padding: 1rem;
+.menu a {
+    display: block;
+    line-height: 2rem;
+    transition: all .4s ease;
+    padding: .5rem 0;
+    border-radius: 5px;
+}
+.menu a:hover {
+    background-color: rgba(57, 118, 151, 0.5);
+    color: #fff;
+    padding-right: 15px;
 }
 
 /* Navbar Section */
@@ -391,15 +403,7 @@ body {
     .navbar {
         display: none;
     }
-    .menu {
-        max-width: 300px;
-        position: absolute;
-        top: .5rem;
-        right: 1rem;
-        text-align: right;
-        display: none;
-    }
-    .hamburger:hover + .menu {
+    .ham-menu:hover .menu {
         display: block;
     }
     .header-caption {
@@ -437,7 +441,7 @@ body {
         width: 30%;
     }
     .atl-logo {
-        width: 45%;
+        width: 40%;
     }
     .footer a {
         font-size: .6rem;

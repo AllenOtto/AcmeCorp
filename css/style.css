@@ -63,11 +63,13 @@ body {
 /* Logo Section */
 .container {
     padding: 0 3%;
+    margin: 0 1rem;
 }
 .hamburger-logo > .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 .logo {
     width: 11%;
@@ -79,8 +81,17 @@ body {
     order: 1;
     padding: .3rem 0;
 }
+
+/* Ham-Menu Section */
 .hamburger {
     order: 2;
+}
+.menu {
+    display: none;
+}
+.bar {
+    width: 100%;
+    padding: 1rem;
 }
 
 /* Navbar Section */
@@ -89,7 +100,7 @@ body {
     border: 1px solid var(--primary-white);
 }
 .nav-links li, .nav-links a {
-    font-size: 14px;
+    font-size: .8rem;
     font-weight: 300;
 }
 .nav-links li {
@@ -143,6 +154,7 @@ body {
     top: 34px;
     text-align: left;
 }
+
 /* Header Section */
 .header {
     margin: var(--section-margin);
@@ -155,6 +167,7 @@ body {
 .header-image {
     width: 50%;
     border-radius: 5px;
+    /* border-right: 5px solid var(--primary-blue); */
 }
 .header-1 {
     color: var(--primary-blue);
@@ -168,7 +181,6 @@ body {
 .header-caption {
     width: 50%;
     text-align: center;
-    margin: 1rem 0 1rem;
     padding: 2rem;
 }
 .contact-caption {
@@ -201,17 +213,26 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 1rem;
 }
 .card {
-    width: 23%;
-    min-width: 250px;
-    max-height: 560px;
+    margin: 1rem 0;
+    width: 20%;
+    min-width: 200px;
     border-radius: 7px;
-    margin: 1.5rem 1rem;
     text-align: center;
     line-height: 1rem;
     box-shadow: 0 0 5px var(--primary-white);
     transition: all .4s ease;
+}
+#card-1 {
+    margin: 1rem;
+}
+#card-2 {
+    margin: 1rem;
+}
+#card-3 {
+    margin: 1rem;
 }
 .card:hover {
     box-shadow: 0 0 10px var(--primary-white);
@@ -223,6 +244,7 @@ body {
     border-top-right-radius: 10px;
 }
 .card-text > * {
+    /* border: 1px solid white; */
     margin: 1rem 0 1rem;
     padding: .6rem 2%;
 }
@@ -245,14 +267,12 @@ body {
 .card-footer {
     height: 30px;
     margin: 1rem .4rem 0;
-    /* display: flex;
-    justify-content: space-evenly; */
 }
 
 /* Rounded Logo Section */
 .rounded-logo .container {
     text-align: center;
-    margin: 2rem 0 3rem;
+    padding: 1rem 0;
 }
 .rounded-logo .acme-rounded-logo, .rounded-logo .atlantis-rounded-logo {
     width: 200px;
@@ -264,26 +284,24 @@ body {
 }
 .rounded-logo p {
     line-height: 3rem;
-    font-size: .9rem;
 }
 
 /* Links Section */
 .footer-links .container {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     line-height: 3rem;
+    /* padding: 4rem 0; */
 }
 .links {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    min-width: 450px;
     width: 50%;
 }
 .quote {
-    min-width: 450px;
     width: 50%;
-    font-size: .5rem;
 }
 .services-links {
     width: 40%;
@@ -315,10 +333,10 @@ body {
     text-align: center;
 }
 .socials .container a {
-    padding: 1rem;
+    padding: 0 1.5rem;
 }
 .socials .container a img {
-    width: 2rem;
+    width: 1.5rem;
 }
 
 /* Footer Section */
@@ -353,30 +371,36 @@ body {
     .card {
         margin: 0 auto;
     }
-    .footer-links {
-        font-size: .5rem;
-    }
     .links {
-        max-width: 50%;
-     }
-    .links {
-        width: 100%;
-        max-width: 50%;
-        justify-content: center;
+        width: 50%;
+        min-width: 400px;
     }
     .links ul li a {
         border-left: 0;
+    }
+    .quote {
+        min-width: 400px;
     }
 }
 
 @media (max-width: 1000px) {
     .container {
         margin: 1.5rem 0 2rem;
-        width: 100%;
-        /* min-width: 350px; */
+        min-width: 350px;
     }
     .navbar {
         display: none;
+    }
+    .menu {
+        max-width: 300px;
+        position: absolute;
+        top: .5rem;
+        right: 1rem;
+        text-align: right;
+        display: none;
+    }
+    .hamburger:hover + .menu {
+        display: block;
     }
     .header-caption {
         width: 100%;
@@ -398,23 +422,25 @@ body {
     .quote {
         padding: 1rem 0;
         margin: 0 auto;
-       text-align: center;
+        text-align: center;
     }
     .social {
         margin: var(--section-margin) 0;
     }
     .socials .container {
-        /* border: 1px solid white; */
         margin: var(--section-margin) 0;
         padding: 0;
     }
 }
 @media (max-width: 700px) {
     .logo {
-        width: 50%;
+        width: 30%;
     }
     .atl-logo {
         width: 45%;
+    }
+    .footer a {
+        font-size: .6rem;
     }
 }
 

@@ -59,6 +59,9 @@ body {
  hr {
      color: var(--primary-white);
  }
+ img {
+     max-width: 100%;
+ }
 
 /* Logo Section */
 .container {
@@ -239,12 +242,15 @@ body {
 }
 #card-1 {
     margin: 1rem;
+    padding-top: 1rem;
 }
 #card-2 {
     margin: 1rem;
+    padding-top: 3rem;
 }
 #card-3 {
     margin: 1rem;
+    padding-top: 2rem;
 }
 .card:hover {
     box-shadow: 0 0 10px var(--primary-white);

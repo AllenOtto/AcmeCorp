@@ -196,12 +196,17 @@ body {
 .header-caption {
     width: 50%;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem;
 }
 .contact-caption {
     text-align: left;
     padding: 1.5rem;
     line-height: 2rem;
+}
+.contact .container p {
+    width: 70%;
+    margin: 30px auto;
+    
 }
 .header-caption h2 {
     padding: 1.5rem 0 2rem;
@@ -502,7 +507,6 @@ body {
 }
 
 @media (max-width: 700px) {
-    .
     .logo {
         width: 30%;
     }

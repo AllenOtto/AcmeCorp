@@ -344,6 +344,12 @@ body {
 .rounded-logo .acme-rounded-logo, .rounded-logo .atlantis-rounded-logo {
     width: 200px;
 }
+.ad-rounded-logo {
+    width: 20%;
+}
+.ad-rounded-logo img {
+    border-radius: 5px;
+}
 .rounded-logo h2 {
     font-size: 1.3rem;
     font-weight: 800;

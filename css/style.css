@@ -180,7 +180,7 @@ body {
     flex-wrap: wrap;
 }
 .header-image {
-    width: 50%;
+    width: 55%;
     border-radius: 5px;
     /* border-right: 5px solid var(--primary-blue); */
 }
@@ -194,19 +194,25 @@ body {
     color: var(--primary-hot-pink);
 }
 .header-caption {
-    width: 50%;
+    width: 45%;
     text-align: center;
-    padding: 4rem;
+    padding: 2rem  0;
+    /* border: 1px solid white; */
+}
+.contact-image {
+    width: 55%;
+    border-radius: 5px;
+    height: 90%;
 }
 .contact-caption {
+    width: 45%;
     text-align: left;
-    padding: 1.5rem;
-    line-height: 2rem;
+    padding: 0 1.5rem 2rem;
+    line-height: 1.5rem;
 }
 .contact .container p {
     width: 80%;
     margin: 30px auto;
-
 }
 .header-caption h2 {
     padding: 1.5rem 0 2rem;
@@ -467,10 +473,10 @@ body {
     .ham-menu:hover .menu {
         display: block;
     }
-    .header-caption {
+    .contact-caption, .header-caption {
         width: 100%;
     }
-    .header-image {
+    .contact-image, .header-image {
         width: 100%;
     }
     .logo {

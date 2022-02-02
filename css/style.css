@@ -16,7 +16,7 @@
     --primary-blue: #00a6ff;
     --primary-hot-pink: #ff4fba;
     --background-black: #0A0A0A;
-    --section-margin: 1.5rem 0;
+    --section-margin: 1rem 0;
  }
 
  /* General CSS Section */
@@ -78,10 +78,6 @@ body {
     order: 1;
     padding: .5rem 0;
 }
-.atl-logo {
-    width: 7%;
-    padding: .3rem 0;
-}
 
 /* Ham-Menu Section */
 .ham-menu {
@@ -136,17 +132,11 @@ body {
     color: var(--primary-red);
     padding: .5rem .5rem;
 }
-.atl-nav-links li a:hover {
-    color: var(--primary-hot-pink);
-}
 .services-dropdown {
     border-left: 5px solid var(--primary-blue);
     border-radius: 3px;
     display: none;
     transition: all .3s ease;
-}
-.atl-services-dropdown {
-    border-left: 5px solid var(--primary-blue);
 }
 .services-dropdown {
     transition: all .4s ease;
@@ -191,9 +181,6 @@ body {
 .contact-header {
     text-align: center;
 }
-.atl-header-1 {
-    color: var(--primary-hot-pink);
-}
 .header-caption {
     width: 45%;
     text-align: center;
@@ -222,9 +209,6 @@ body {
     transition: all 300ms ease;
 }
 .call-to-action a:hover {
-    color: var(--primary-blue);
-}
-.atl-call-to-action a:hover {
     color: var(--primary-blue);
 }
 
@@ -288,7 +272,7 @@ body {
 }
 .card {
     margin: 1rem 0;
-    width: 20%;
+    width: 21%;
     min-width: 200px;
     border-radius: 7px;
     text-align: center;
@@ -331,9 +315,6 @@ body {
 .card-text h2 a:hover {
     color:var(--primary-red);
 }
-.atl-card-text h2 a:hover {
-    color: var(--primary-hot-pink);
-}
 .card-text p {
     font-size: .8rem;
     line-height: 1.5rem;
@@ -344,23 +325,21 @@ body {
 }
 
 /* Rounded Logo Section */
+.rounded-logo {
+    padding: 3rem 0;
+}
 .rounded-logo .container {
     text-align: center;
-    padding: 1rem 0;
+    width: 100%;
 }
-.rounded-logo .acme-rounded-logo, .rounded-logo .atlantis-rounded-logo {
-    width: 200px;
-}
-.ad-rounded-logo {
-    width: 20%;
-}
-.ad-rounded-logo img {
-    border-radius: 5px;
+.ad-rounded-logo-image,
+.acme-rounded-logo-image {
+    width: 10%;
 }
 .rounded-logo h2 {
     font-size: 1.3rem;
     font-weight: 800;
-    line-height: 3rem;
+    line-height: 3;
 }
 .rounded-logo p {
     line-height: 3rem;
@@ -392,10 +371,6 @@ body {
 .links ul li a {
     transition: all .4s ease;
     border-left: 5px solid var(--primary-red);
-}
-.atl-links ul li a {
-    transition: all .4s ease;
-    border-left: 5px solid var(--primary-hot-pink);
 }
 .links ul li a {
     padding: 1rem;
@@ -448,6 +423,23 @@ body {
     .nav-links li:hover > .companies-dropdown {
         left: 10px;
     }
+    .contact-caption {
+        width: 100%;
+        text-align: center;
+    }
+    .header-caption {
+        width: 100%;
+    }
+    .contact-image, .header-image {
+        width: 100%;
+    }
+    .rounded-logo {
+        margin: 0;
+        padding: 0;
+    }
+    .acme-rounded-logo-image {
+        width: 20%;
+    }
     .card {
         margin: 0 auto;
     }
@@ -474,17 +466,15 @@ body {
     .ham-menu:hover .menu {
         display: block;
     }
-    .contact-caption, .header-caption {
+    .header-caption {
         width: 100%;
+        margin: 0 0 1rem;
     }
-    .contact-image, .header-image {
+    .header-image {
         width: 100%;
     }
     .logo {
         width: 40%;
-    }
-    .atl-logo {
-        width: 35%;
     }
     .links {
         padding: 1rem 0;
@@ -515,6 +505,9 @@ body {
     .contact .container p {
         width: 90%;
     }
+    .ad-rounded-logo-image {
+        width: 20%;
+    }
 }
 
 @media only screen and (max-width: 733px) {
@@ -527,38 +520,25 @@ body {
     }
 }
 
-@media (max-width: 700px) {
+@media only screen and (max-width: 700px) {
     .logo {
         width: 30%;
-    }
-    .atl-logo {
-        width: 40%;
     }
     .footer a {
         font-size: .6rem;
     }
 }
+@media only screen and (max-width: 600px) {
+    .acme-rounded-logo-image {
+        width: 30%;
+    }
+}
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
     .logo {
         width: 60%;
-    }
-    .atl-logo {
-        width: 45%;
     }
     .services-links {
         width: 100%;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
